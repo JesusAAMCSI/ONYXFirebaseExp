@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "850011996494",
+    "project_id": "multiva-test-ad46c",
+    "storage_bucket": "multiva-test-ad46c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850011996494:android:87880985882f5fc72c9e1f",
+        "android_client_info": {
+          "package_name": "com.example.multiva_movil"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqq6Ztg91es5opBoMUlu-UFlKPOqY8x28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850011996494:android:3fb467ee789fa31b2c9e1f",
+        "android_client_info": {
+          "package_name": "com.example.onyx_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqq6Ztg91es5opBoMUlu-UFlKPOqY8x28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

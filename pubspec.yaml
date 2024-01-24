@@ -1,0 +1,29 @@
+name: onyx_firebase
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  onyx_plugin: ^8.1.0
+
+  # firebase_messaging: ^14.7.6
+  # firebase_core: ^2.24.0
+  # flutter_local_notifications: ^16.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
