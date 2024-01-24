@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-// import 'package:onyx_firebase/core/utils.dart';
-// import 'package:onyx_firebase/firebase_options.dart';
-// import 'package:onyx_firebase/helpers/notification_helper.dart';11
+import 'package:onyx_firebase/core/utils.dart';
+import 'package:onyx_firebase/firebase_options.dart';
+import 'package:onyx_firebase/helpers/notification_helper.dart';
 import 'package:onyx_firebase/presentation/fingerprint_screen.dart';
 import 'package:onyx_firebase/presentation/settings_screen.dart';
 import 'package:onyx_plugin/onyx.dart';
-// import 'package:firebase_core/firebase_core.dart';
-// import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
-  // await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(MyApp());
 }
 
@@ -39,15 +39,15 @@ class _MyAppState extends State<MyApp> {
             .push(MaterialPageRoute(builder: (context) => FingerprintScreen()));
       }
     });
-    // _notifications();
+    _notifications();
   }
 
-  // _notifications() {
-  //   Future.delayed(Duration.zero, () async {
-  //     NotificationHelper().initNotifications(context);
-  //     await initLocalNotifications(context);
-  //   });
-  // }
+  _notifications() {
+    Future.delayed(Duration.zero, () async {
+      NotificationHelper().initNotifications(context);
+      await initLocalNotifications(context);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
