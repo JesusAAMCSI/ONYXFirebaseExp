@@ -7,6 +7,12 @@ import Flutter
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
+    // 
+   // guard let flutterViewController = window?.rootViewController as! FlutterViewController? else {
+      //fatalError("Root view controller is not of type FlutterViewController")
+      //}
+      //OnyxPlugin.setFlutterViewController(flutterViewController)
+    //
     GeneratedPluginRegistrant.register(with: self)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
